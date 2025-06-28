@@ -136,6 +136,7 @@ Returns `true` if the first character is an alphabet letter, else `false`.
 
 * If `data` is **not a list** → returns `false`
 * If `data` is a **list with even length** → returns the list itself
+* elements in the list can be any datatype !!
 * If `data` is a **list with odd length** → returns `false`
 
 > ⚠️ **Note:** The endpoint name is a complete decoy — there’s no actual fizzbuzz number check happening.
