@@ -132,7 +132,7 @@ Returns `true` if the first character is an alphabet letter, else `false`.
 
 ### 📌 `POST /fizzbuzz`
 
-**🔒 Hidden Behavior (Final Decoded Logic):**
+**🔒 Hidden Behavior (Initial Decoded Logic):**
 
 * If `data` is **not a list** → returns `false`
 * If `data` is a **list with even length** → returns the list itself
@@ -176,6 +176,35 @@ Returns `true` if the first character is an alphabet letter, else `false`.
 ```json
 { "result": false }
 ```
+
+---
+### 📌 `POST /fizzbuzz`  (Later Debugging it changed behaviour)
+
+**Behavior:**
+**After exhaustive testing and analysis, it is determined that this endpoint is a deliberate decoy.**
+
+**Summary:**
+
+* Accepts a JSON array as input.
+* Regardless of list length, contents, data types, numerical patterns, or combinations, it **consistently returns `false`.**
+* No condition, including classic FizzBuzz checks (divisibility by 3 or 5), empty lists, mixed or uniform types, or any numerical pattern triggers a different response.
+
+**Verdict:**
+Likely implemented intentionally as a dead-end endpoint to consume debugging time and serve as a distraction within the challenge design.
+
+**Example:**
+
+```json
+{ "data": [3, 5, 15] }
+```
+
+➡️ `{ "result": false }`
+
+```json
+{ "data": [] }
+```
+
+➡️ `{ "result": false }`
 
 ---
 
